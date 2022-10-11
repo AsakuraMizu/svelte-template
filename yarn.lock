@@ -166,28 +166,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ota-meshi/eslint-plugin-svelte@npm:^0.34.1":
-  version: 0.34.1
-  resolution: "@ota-meshi/eslint-plugin-svelte@npm:0.34.1"
-  dependencies:
-    debug: ^4.3.1
-    eslint-utils: ^3.0.0
-    known-css-properties: ^0.25.0
-    postcss: ^8.4.5
-    postcss-load-config: ^3.1.4
-    postcss-safe-parser: ^6.0.0
-    sourcemap-codec: ^1.4.8
-    svelte-eslint-parser: ^0.16.0
-  peerDependencies:
-    eslint: ^7.0.0 || ^8.0.0-0
-    svelte: ^3.37.0
-  peerDependenciesMeta:
-    svelte:
-      optional: true
-  checksum: d59eb0020bf908338fdfcddaa6d97fac6b65c7c861725d37cdee1a1cd8dfad7f0763669f2981aa66b463584261cae10ddcd0b2e8d6fded46f23646a9f5f351ff
-  languageName: node
-  linkType: hard
-
 "@rollup/pluginutils@npm:^4.2.1":
   version: 4.2.1
   resolution: "@rollup/pluginutils@npm:4.2.1"
@@ -1275,6 +1253,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-svelte@npm:^2.10.0":
+  version: 2.10.0
+  resolution: "eslint-plugin-svelte@npm:2.10.0"
+  dependencies:
+    debug: ^4.3.1
+    eslint-utils: ^3.0.0
+    esutils: ^2.0.3
+    known-css-properties: ^0.25.0
+    postcss: ^8.4.5
+    postcss-load-config: ^3.1.4
+    postcss-safe-parser: ^6.0.0
+    sourcemap-codec: ^1.4.8
+    svelte-eslint-parser: ^0.18.0
+  peerDependencies:
+    eslint: ^7.0.0 || ^8.0.0-0
+    svelte: ^3.37.0
+  peerDependenciesMeta:
+    svelte:
+      optional: true
+  checksum: e659dfd7b17b6a038194b596f371ec19533348dac0cf25f26936fc3b239b40634b89b2ff9b727fb9c1cc95864ee0154b5845443f5575593da12fce8455566b29
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -1429,7 +1430,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esutils@npm:^2.0.2":
+"esutils@npm:^2.0.2, esutils@npm:^2.0.3":
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
   checksum: 22b5b08f74737379a840b8ed2036a5fb35826c709ab000683b092d9054e5c2a82c27818f12604bfc2a9a76b90b6834ef081edbc1c7ae30d1627012e067c6ec87
@@ -2592,7 +2593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.17":
+"postcss@npm:^8.4.17, postcss@npm:^8.4.5":
   version: 8.4.17
   resolution: "postcss@npm:8.4.17"
   dependencies:
@@ -2600,17 +2601,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: a6d9096dd711e17f7b1d18ff5dcb4fdedf3941d5a3dc8b0e4ea873b8f31972d57f73d6da9a8aed7ff389eb52190ed34f6a94f299a7f5ddc68b08a24a48f77eb9
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.5":
-  version: 8.4.14
-  resolution: "postcss@npm:8.4.14"
-  dependencies:
-    nanoid: ^3.3.4
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
   languageName: node
   linkType: hard
 
@@ -3052,20 +3042,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-eslint-parser@npm:^0.16.0":
-  version: 0.16.4
-  resolution: "svelte-eslint-parser@npm:0.16.4"
-  dependencies:
-    eslint-scope: ^7.0.0
-    eslint-visitor-keys: ^3.0.0
-    espree: ^9.0.0
-  peerDependencies:
-    svelte: ^3.37.0
-  checksum: 3db24ce267f3dcd2d4ce7afa70a5a0e738b78a9a920a71beae4bece5aee38e44f9306d4cfce41337ce2d6b62655c28ad986dba942ea58cb433cd9f3a220e7e9c
-  languageName: node
-  linkType: hard
-
-"svelte-eslint-parser@npm:^0.18.4":
+"svelte-eslint-parser@npm:^0.18.0, svelte-eslint-parser@npm:^0.18.4":
   version: 0.18.4
   resolution: "svelte-eslint-parser@npm:0.18.4"
   dependencies:
@@ -3140,7 +3117,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "svelte-template@workspace:."
   dependencies:
-    "@ota-meshi/eslint-plugin-svelte": ^0.34.1
     "@sveltejs/vite-plugin-svelte": ^1.0.9
     "@tailwindcss/forms": ^0.5.3
     "@tailwindcss/typography": ^0.5.7
@@ -3151,6 +3127,7 @@ __metadata:
     eslint: ^8.25.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-svelte: ^2.10.0
     postcss: ^8.4.17
     postcss-load-config: ^4.0.1
     prettier: ^2.7.1
