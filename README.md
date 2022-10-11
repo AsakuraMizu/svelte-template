@@ -1,4 +1,4 @@
-# Svelte + TS + Vite
+# Svelte + TS + Vite + Tailwind CSS
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
 
