@@ -7,6 +7,7 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+
   &:hover {
     @apply text-[#747bff] dark:text-[#535bf2];
   }
@@ -14,11 +15,13 @@ a {
 
 button {
   @apply cursor-pointer rounded-lg border border-solid border-transparent bg-[#f9f9f9] py-3 px-5 text-base
-  font-medium dark:bg-[#1a1a1a];
+    font-medium dark:bg-[#1a1a1a];
   transition: border-color 0.25s;
+
   &:hover {
     @apply border-[#646cff];
   }
+
   &:focus,
   &:focus-visible {
     @apply outline-4;
