@@ -31,11 +31,15 @@
     "svelte-check": "^2.9.2",
     "svelte-eslint-parser": "^0.20.0",
     "svelte-preprocess": "^4.10.7",
+    "tinro": "^0.6.12",
     "tslib": "^2.4.1",
     "typescript": "^4.8.4",
     "unocss": "^0.46.4",
     "vite": "^3.2.3",
     "vitest": "^0.25.1"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "resolutions": {
+    "tinro@^0.6.12": "patch:tinro@npm%3A0.6.12#./.yarn/patches/tinro-npm-0.6.12-7f0b9f9110.patch"
+  }
 }

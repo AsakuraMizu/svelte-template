@@ -4211,6 +4211,7 @@ __metadata:
     svelte-check: ^2.9.2
     svelte-eslint-parser: ^0.20.0
     svelte-preprocess: ^4.10.7
+    tinro: ^0.6.12
     tslib: ^2.4.1
     typescript: ^4.8.4
     unocss: ^0.46.4
@@ -4251,6 +4252,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"tinro@npm:^0.6.12":
+  version: 0.6.12
+  resolution: "tinro@npm:0.6.12"
+  checksum: 33e5fa7526838eecd47c39dd71ea3e813b3b3b00642d830db957f00945c248deca7eccc8bec5ee933c2e040244b9ad53c4ca115ba721c3e097f7eddd0866dbd3
   languageName: node
   linkType: hard
 
