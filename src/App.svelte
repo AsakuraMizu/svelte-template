@@ -1,7 +1,7 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg';
-  import unoLogo from './assets/uno.svg';
-  import Counter from './lib/Counter.svelte';
+  import svelteLogo from '@/assets/svelte.svg';
+  import unoLogo from '@/assets/uno.svg';
+  import Counter from '@/lib/Counter.svelte';
 </script>
 
 <main

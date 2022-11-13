@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 import unocss from 'unocss/vite';
 import { extractorSvelte } from '@unocss/core';
@@ -25,4 +26,9 @@ export default defineConfig({
       preprocess: [sveltePreprocess()],
     }),
   ],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
 });
