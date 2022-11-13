@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
@@ -24,11 +25,15 @@ export default defineConfig({
     }),
     svelte({
       preprocess: [sveltePreprocess()],
+      hot: !process.env.VITEST,
     }),
   ],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
+  },
+  test: {
+    environment: 'jsdom',
   },
 });

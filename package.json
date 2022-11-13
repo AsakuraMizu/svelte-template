@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix "
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.9",
     "@sveltejs/vite-plugin-svelte": "^1.1.1",
+    "@testing-library/svelte": "^3.2.2",
     "@tsconfig/svelte": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
@@ -22,6 +24,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-svelte": "^2.12.0",
+    "jsdom": "^20.0.2",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.8.0",
     "svelte": "^3.53.1",
@@ -31,7 +34,8 @@
     "tslib": "^2.4.1",
     "typescript": "^4.8.4",
     "unocss": "^0.46.4",
-    "vite": "^3.2.3"
+    "vite": "^3.2.3",
+    "vitest": "^0.25.1"
   },
   "packageManager": "yarn@3.2.4"
 }

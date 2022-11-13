@@ -4,6 +4,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "antfu.iconify",
-    "antfu.unocss"
+    "antfu.unocss",
+    "zixuanchen.vitest-explorer"
   ]
 }
