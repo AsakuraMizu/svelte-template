@@ -13,6 +13,5 @@
   "svelte.enable-ts-plugin": true,
   "eslint.validate": [
     "svelte"
-  ],
-  "testing.automaticallyOpenPeekView": "never"
+  ]
 }

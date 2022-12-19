@@ -10,7 +10,7 @@
     "test": "vitest",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix "
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.11",
@@ -19,6 +19,14 @@
     "@tsconfig/svelte": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
+    "@unocss/core": "^0.47.6",
+    "@unocss/preset-attributify": "^0.47.6",
+    "@unocss/preset-icons": "^0.47.6",
+    "@unocss/preset-uno": "^0.47.6",
+    "@unocss/reset": "^0.47.6",
+    "@unocss/transformer-directives": "^0.47.6",
+    "@unocss/transformer-variant-group": "^0.47.6",
+    "@unocss/vite": "^0.47.6",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
@@ -34,12 +42,12 @@
     "tinro": "^0.6.12",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
-    "unocss": "^0.47.6",
     "vite": "^4.0.2",
     "vitest": "^0.26.0"
   },
-  "packageManager": "yarn@3.2.4",
-  "resolutions": {
-    "tinro@^0.6.12": "patch:tinro@npm%3A0.6.12#./.yarn/patches/tinro-npm-0.6.12-7f0b9f9110.patch"
+  "pnpm": {
+    "patchedDependencies": {
+      "tinro@0.6.12": "patches/tinro@0.6.12.patch"
+    }
   }
 }

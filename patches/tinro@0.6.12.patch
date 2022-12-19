@@ -1,9 +1,9 @@
 diff --git a/index.d.ts b/index.d.ts
-index 3f969c383befbe9de4780be8598b9f5e6ca6fe31..8b9bf9618b3868860901fa15c831b5a16b3f010c 100644
+index 3f969c383befbe9de4780be8598b9f5e6ca6fe31..2415d26cd4e2668b7d3f66d00bca1c7ff3ea4fc8 100644
 --- a/index.d.ts
 +++ b/index.d.ts
 @@ -1,122 +1,127 @@
-+import { SvelteComponentTyped } from 'svelte';
++import type { SvelteComponentTyped } from 'svelte';
 +
  interface TinroRoute {
 -    url: string
