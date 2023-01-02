@@ -1,4 +1,4 @@
-declare namespace svelte.JSX {
+declare namespace svelteHTML {
   type TwoStringsCompositionPrefix = 'm' | 'p';
   type TwoStringsCompositionSuffix = 'r' | 'b' | 'l' | 't' | 'x' | 'y' | 'a';
   /** Some words can compose with two strings to become a complete unocss rule such as ha, mr, mb */
