@@ -45,20 +45,21 @@ declare namespace svelteHTML {
     | 'filter'
     | 'ha'
     | 'wa';
+  type HWNumberCompositionPrefix = 'max-h' | 'max-w' | 'min-h' | 'min-w' | 'w' | 'h';
   type StringNumberCompositionPrefix =
     | 'op'
     | 'opacity'
     | 'fw'
     | 'p'
     | 'm'
-    | 'w'
-    | 'h'
     | 'z'
+    | HWNumberCompositionPrefix
     | TwoStringsComposition;
   /** Some words can be a complete unocss rule by compose a string and a number, such as op80, fw300, p2, p10px */
   type StringNumberComposition =
     | `${StringNumberCompositionPrefix}${number}${'px' | 'rem' | 'em' | ''}`
-    | `${StringNumberCompositionPrefix}a`;
+    | `${StringNumberCompositionPrefix}${'a' | 'auto' | 'full'}`
+    | `${HWNumberCompositionPrefix}screen`;
   type PseudoPrefix =
     | 'active'
     | 'before'
@@ -106,8 +107,11 @@ declare namespace svelteHTML {
     | 'justify'
     | 'list'
     | 'm'
+    | 'max-h'
+    | 'max-w'
     | 'min-h'
     | 'min-w'
+    | 'object'
     | 'opacity'
     | 'order'
     | 'outline'
